@@ -1,0 +1,60 @@
+{
+    "name": "Organic #23",
+    "symbol": "GGG",
+    "description": "description",
+    "seller_fee_basis_points": 250,
+    "image": "https://www.arweave.net/LTPb1zCBts7o7es2K9xYJ5DxG6iZwc_lQ3F7eee9EAA?ext=png",
+    "external_url": "",
+    "edition": 23,
+    "attributes": [
+        {
+            "trait_type": "TIER",
+            "value": "rare"
+        },
+        {
+            "trait_type": "BACKGROUND",
+            "value": "darkred"
+        },
+        {
+            "trait_type": "BASE",
+            "value": "1001"
+        },
+        {
+            "trait_type": "EAR",
+            "value": "2003"
+        },
+        {
+            "trait_type": "EYES",
+            "value": "White"
+        },
+        {
+            "trait_type": "HORN",
+            "value": "3004"
+        },
+        {
+            "trait_type": "MOUTH",
+            "value": "4008"
+        }
+    ],
+    "collection": {
+        "name": "Organic",
+        "family": "Organic Starter Collection"
+    },
+    "properties": {
+        "files": [
+            {
+                "uri": "https://www.arweave.net/LTPb1zCBts7o7es2K9xYJ5DxG6iZwc_lQ3F7eee9EAA?ext=png",
+                "type": "image/png"
+            }
+        ],
+        "category": "image",
+        "creators": [
+            {
+                "address": "3iokPpkroEbSFf9Mu1dpE9WaSDArVCPJKuzd47Sk8TVF",
+                "share": 100
+            }
+        ]
+    },
+    "tokenMintAddress": "FxEXCyR4sYHTCp9aFxUgDKNJzeUEMfPAZtRwuXEyJgor",
+    "tokenAccountAddress": "3sH8ViuQ5hRDAvNWUoy3ZyMVm7L2nrDQHfwXk6stwj4r"
+}

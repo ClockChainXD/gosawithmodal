@@ -1,0 +1,60 @@
+{
+    "name": "Organic #19",
+    "symbol": "GGG",
+    "description": "description",
+    "seller_fee_basis_points": 250,
+    "image": "https://www.arweave.net/ueS12w4NbNmWG2OYkB_AK7PZoBqtPjoLV5jLzZyZL44?ext=png",
+    "external_url": "",
+    "edition": 19,
+    "attributes": [
+        {
+            "trait_type": "TIER",
+            "value": "common"
+        },
+        {
+            "trait_type": "BACKGROUND",
+            "value": "light purple effect"
+        },
+        {
+            "trait_type": "BASE",
+            "value": "1001"
+        },
+        {
+            "trait_type": "EAR",
+            "value": "2003"
+        },
+        {
+            "trait_type": "EYES",
+            "value": "White"
+        },
+        {
+            "trait_type": "HORN",
+            "value": "3001"
+        },
+        {
+            "trait_type": "MOUTH",
+            "value": "4008"
+        }
+    ],
+    "collection": {
+        "name": "Organic",
+        "family": "Organic Starter Collection"
+    },
+    "properties": {
+        "files": [
+            {
+                "uri": "https://www.arweave.net/ueS12w4NbNmWG2OYkB_AK7PZoBqtPjoLV5jLzZyZL44?ext=png",
+                "type": "image/png"
+            }
+        ],
+        "category": "image",
+        "creators": [
+            {
+                "address": "3iokPpkroEbSFf9Mu1dpE9WaSDArVCPJKuzd47Sk8TVF",
+                "share": 100
+            }
+        ]
+    },
+    "tokenMintAddress": "2qJskMgDowdSnhePfFtWe3FGuz8RpJdv6mRDZaGxgGd1",
+    "tokenAccountAddress": "H71wUCmX2mhsDNtmfmcnF3Ku9es5pdkDeK2ktuHHJBJs"
+}
