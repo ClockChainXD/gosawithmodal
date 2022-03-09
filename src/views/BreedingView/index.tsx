@@ -210,7 +210,7 @@ export const BreedingView: FC = ({ }) => {
         ); */
         if(holdingNftDetails){
           setHoldingNftDetails(holdingNftDetails.filter((currentNft) => {
-            if(currentNft.tokenMintAddress!=nftDetail.tokenMintAddress && currentNft.tokenAccountAddress!=nftDetail.tokenAccountAddress){
+            if(currentNft.tokenMintAddress!=nftDetail.tokenMintAddress && currentNft.tokenAccountAddress!=nftDetail.tokenAccountAddress && nftDetail.name.includes("GOSA")){
               console.log("hold", currentNft)
               return currentNft
             }
@@ -219,7 +219,7 @@ export const BreedingView: FC = ({ }) => {
           setHoldingNftDetails((prevDetails) => {
             let uniqs= prevDetails?.filter((current) => 
             {
-              if(current.tokenMintAddress!=nftDetail.tokenMintAddress && current.tokenAccountAddress!=nftDetail.tokenAccountAddress)
+              if(current.tokenMintAddress!=nftDetail.tokenMintAddress && current.tokenAccountAddress!=nftDetail.tokenAccountAddress && nftDetail.name.includes("GOSA"))
               return current
 
               
@@ -270,7 +270,7 @@ export const BreedingView: FC = ({ }) => {
       alert.error("Minting process is running now!");
       return;
   }
-  if(!selectedNft1 || !selectedNft2) {
+  if(!selectedNft1 || !selectedNft2 || !selectedNft1.name.includes('GOSA') || !selectedNft2.name.includes('GOSA')) {
       alert.error("Parent Nfts are not valid!");
       return;
   }
@@ -281,6 +281,8 @@ export const BreedingView: FC = ({ }) => {
       alert("Please select 2 nfts to breed!");
       return;
   } */
+
+  
   const tierA = readTraitValue(selectedNft1, 'Tier');
   const tierB = readTraitValue(selectedNft2, 'Tier');
 
@@ -299,7 +301,7 @@ export const BreedingView: FC = ({ }) => {
 
     console.log("tierA:",holdingNftDetails)
 if(!selectedNft1 || !selectedNft2){
-  alert.error("Select nfts carefully please")
+  alert.error("Select nfts carefully please.")
   return;
 
 }
