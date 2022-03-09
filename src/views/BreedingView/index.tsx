@@ -236,7 +236,7 @@ export const BreedingView: FC = ({ }) => {
     });
   }
   function readTraitValue(nft: Metadata, traitType: string) {
-    if (nft) {
+    if (nft && nft.name.includes('GOSA')) {
       if (!nft.attributes) return "empty";
       else {
         let value = nft.attributes.find(
