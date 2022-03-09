@@ -208,14 +208,14 @@ export const BreedingView: FC = ({ }) => {
         /*setHoldingNftDetails((prevDetails) =>
           prevDetails ? [...prevDetails, nftDetail] : [nftDetail]
         ); */
-        if(holdingNftDetails){
+        if(holdingNftDetails && nftDetail.name.includes('GOSA') && nftDetail.symbol=="GOSA"){
           setHoldingNftDetails(holdingNftDetails.filter((currentNft) => {
             if(currentNft.tokenMintAddress!=nftDetail.tokenMintAddress && currentNft.tokenAccountAddress!=nftDetail.tokenAccountAddress && nftDetail.name.includes("GOSA")){
               console.log("hold", currentNft)
               return currentNft
             }
           }))
-        } else {
+        } else if(nftDetail.symbol=="GOSA") {
           setHoldingNftDetails((prevDetails) => {
             let uniqs= prevDetails?.filter((current) => 
             {
@@ -645,7 +645,7 @@ if(!selectedNft1 || !selectedNft2){
                                       </li>
                                       <li className="list-group-item">
                                         {" "}
-                                        <b>Rank: </b> {nft["attributes"][0]["value"]}{" "}
+                                        <b>Rank: </b> {nft["attributes"][1]["value"]}{" "}
                                       </li>
                                       <li className="list-group-item">
                                         {" "}
@@ -770,7 +770,7 @@ if(!selectedNft1 || !selectedNft2){
                                       </li>
                                       <li className="list-group-item">
                                         {" "}
-                                        <b>Rank: </b> {nft["attributes"][0]["value"]}{" "}
+                                        <b>Rank: </b> {nft["attributes"][1]["value"]}{" "}
                                       </li>
                                       <li className="list-group-item">
                                         {" "}
