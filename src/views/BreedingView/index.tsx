@@ -298,6 +298,12 @@ export const BreedingView: FC = ({ }) => {
     alert.show("Breeding has been started!");
 
     console.log("tierA:",holdingNftDetails)
+if(!selectedNft1 || !selectedNft2){
+  alert.error("Select nfts carefully please")
+  return;
+
+}
+
 
     const collectionA = selectedNft1.collection.family.includes('Robot') ? 'Robot' : selectedNft1.collection.family.includes('Organic') ? 'Organic' : 'Cyborg'  ;
     const collectionB =  selectedNft2.collection.family.includes('Robot') ? 'Robot' : selectedNft2.collection.family.includes('Organic') ? 'Organic' : 'Cyborg' 
