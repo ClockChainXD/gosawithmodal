@@ -650,7 +650,7 @@ if(!selectedNft1 || !selectedNft2){
                                       <li className="list-group-item">
                                         {" "}
                                         <b>Type: </b>{" "}
-                                        {nft["collection"]["family"].includes("Organic")
+                                        {nft["collection"] && nft["collection"]["family"].includes("Organic")
                                           ? "Organic"
                                           : nft["collection"]["family"].includes("Robot")
                                             ? "Robot"
@@ -775,7 +775,7 @@ if(!selectedNft1 || !selectedNft2){
                                       <li className="list-group-item">
                                         {" "}
                                         <b>Type: </b>{" "}
-                                        {nft["collection"]["family"].includes("Organic")
+                                        {nft["collection"] && nft["collection"]["family"].includes("Organic")
                                           ? "Organic"
                                           : nft["collection"]["family"].includes("Robot")
                                             ? "Robot"
