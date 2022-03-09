@@ -20,19 +20,7 @@ const txTimeout = 30000; // milliseconds (confirm this works for your project)
 
 export const CandyMachineMintView: FC = ({}) => {
 
-  const [count, setCount] = useState<number>(1);
-
-  const inc = () => {
-    setCount(count + 1);
-  };
-
-  const dec = () => {
-    if(count > 1) {
-      setCount(count - 1);
-    } else {
-      alert("You can't mint less than one NFT!");
-    }
-  }
+  
 
   return (
     <Layout>
@@ -41,23 +29,18 @@ export const CandyMachineMintView: FC = ({}) => {
         <div className="row hidememobile">
         <div className="col-1"></div>
           <div className="col-3 text-right">
-            <button className="btn_general" onClick={dec}><img src="/images/mint/mint_minus.png" /></button>
           </div>
           <div className="col-4 text-center">
             <div className="mint_count">
               <MintSection
                 candyMachineId={candyMachineId}
                 startDate={startDateSeed}
-                txTimeout={txTimeout}
-              />
-              <input type="number" value={count} />
+                txTimeout={txTimeout} count={0}              />
             </div>
           </div>
           <div className="col-3 text-left">
-            <button className="btn_general" onClick={inc}><img src="/images/mint/mint_plus.png" /></button>
           </div>
           <div className="col-12 text-center">
-            <button className="btn_mint"><img src="/images/mint/mint_button.png" /></button>
           </div>
           <div className="col-1"></div>
         </div>
