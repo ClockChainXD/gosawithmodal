@@ -250,12 +250,14 @@ export const BreedingView: FC = ({ }) => {
   const selectNft1Func = (event, nft) => {
     console.log("select nft 1 evnt")
     // burda seçili nftyi çıkar diğer arrayden
+    if(nft.name.includes('GOSA'))
     selectNft1(nft);
     console.log(nft)
   }
 
   const selectNft2Func = (event, nft) => {
     console.log("select nft 2 evnt")
+    if(nft.name.includes('GOSA'))
     selectNft2(nft);
     event.target.style.border = "2px solid #0071c5;"
     console.log(event.target)
